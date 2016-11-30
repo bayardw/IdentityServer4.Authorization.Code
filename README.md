@@ -1,5 +1,5 @@
 # IdentityServer4.Authorization.Code
-An IdentityServer4 Example of an OAuth 2.0 Authorization Code Flow (Grant). This project grew out of the need for an example IdentityServer4 client using the OAuth 2.0 Authorization Code Flow. 
+An IdentityServer4 Example of an OAuth 2.0 Authorization Code Flow (Grant). This project grew out of the need for an example IdentityServer4 client using the OAuth 2.0 Authorization Code Flow. This example doesn't use OpenId Connect (OIDC).
 
 ## Getting Started
 ### Prerequisites
