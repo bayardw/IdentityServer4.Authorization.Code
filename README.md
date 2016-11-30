@@ -1,5 +1,5 @@
 # IdentityServer4.Authorization.Code
-IdentityServer4 Example of an Authorization Code Flow (Grant). This project grew out of the need for an example IdentityServer4 client using the Authorization Code Flow. 
+An IdentityServer4 Example of an OAuth 2.0 Authorization Code Flow (Grant). This project grew out of the need for an example IdentityServer4 client using the OAuth 2.0 Authorization Code Flow. 
 
 ## Getting Started
 ### Prerequisites
@@ -20,12 +20,12 @@ Once the MVC project is running, select Sign-in from the menu bar. Here are some
 If the authentication with the IdP goes well, the client home/index page will enumerate the claims passed in on the Access Token.
 
 ## Technology Stack Choices
-The choice between IdentityServer3 and IdentityServer4 was almost arbitrary. The example client project worked with both. In the end, IdentityServer4 won out because getting logging output and therefore debugging was marginally easier; problems show up right away in the command line window. 
+IdentityServer4 was chosen because getting logging output and therefore debugging was so easy; problems show up right away in the command line window. 
 
 The choice of Owin (.Net Framework, pre-Core) for the client was purely for expediency. The project that drove the initial coding required calling into some legacy code that proved harder in .Net Core. 
 
 ## IdentityServer4
-The primary role of an Identity Provider (IdP) is to verify that a user is who they claim to be. Knowing that doesn't always provide all the clues as to how a robust provider like IdentityServer4 operates. IdentityServer4 also:
+Verifing that a user is who they claim to be is the primary role of an Identity Provider (IdP). A robust provider like IdentityServer4 also:
 - Provides screens for user to enter their username and password
 - Reads the user database / datastore
 - Keeps the user logged into the IdP itself using Cookie Middleware (configurable) so that subsequent calls don't show the login screen until the session expires
@@ -34,6 +34,7 @@ In IdentityServer3, the views, JavaScript, CSS, etc. to render those login / aut
 
 ##Futher Reading
 Cookie Middleware - https://docs.microsoft.com/en-us/aspnet/core/security/authentication/cookie
+IdentityServer4 Getting Started - https://www.scottbrady91.com/Identity-Server/Getting-Started-with-IdentityServer-4
 
 ## Acknowledgments
 This code was inspired by Scott Brady's blog postings on the Implcit Flow and IdentityServer 3:  https://www.scottbrady91.com/Identity-Server/Identity-Server-3-Standalone-Implementation-Part-1
