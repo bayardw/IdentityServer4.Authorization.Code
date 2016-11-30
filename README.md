@@ -1,19 +1,19 @@
 # IdentityServer4.Authorization.Code
-IdentityServer 4 Example of an Authorization Code Flow (Grant). This project grew out of the need for an example IdentityServer 4 client using the Authorization Code Flow. 
+IdentityServer4 Example of an Authorization Code Flow (Grant). This project grew out of the need for an example IdentityServer4 client using the Authorization Code Flow. 
 
 ## Getting Started
 
 ### Prerequisites
 
 This example requires:
-- Visual Studio 2015 Preview 1 or later
-- .Net Core CLI.  The installer can be found here: https://www.microsoft.com/net/core#windows
+- Visual Studio 2015
+- .Net Core CLI and Visual Studio tooling for .Net Core (Preview 1 or later). The installer can be found here: https://www.microsoft.com/net/core#windows
 
 The solution consists of two projects:
-- An Identity Provier (IdP) command line applicaton built on IdentityServer 4 and .Net Core.
+- An Identity Provier (IdP) command line application built on IdentityServer4 and .Net Core.
 - An MVC Client built using Owin
 
-**Both projects must start for the sample to work.** In the Solution Explorer, right-click on the Solution at the top, select Set Startup Projects from the context menu. Pick Multiple Projects and set the action of both to Start. Pressing F5 now will start the identity provider and client.
+**Both projects must start for the sample to work** when you press F5. In the Solution Explorer, right-click on the Solution at the top, select Set Startup Projects from the context menu. Pick Multiple Projects and set the action of both to Start. Pressing F5 now will start the identity provider and client.
 
 Once the MVC project is running, select Sign-in from the menu bar. Here are some working credentials:
 - user: user
@@ -21,6 +21,19 @@ Once the MVC project is running, select Sign-in from the menu bar. Here are some
 
 If the authentication with the IdP goes well, the client home/index page will enumerate the claims passed in on the Access Token.
 
+## Technology Stack Choices
+The choice between IdentityServer3 and IdentityServer4 was almost arbitrary. The example client project worked with both. In the end, IdentityServer4 won out because getting logging output and therefore debugging was marginally easier; problems show up right away in the command line window. 
+
+The choice of Owin (.Net Framework, pre-Core) for the client was purely for expediency. The project that drove the initial coding required calling into some legacy code that proved harder in .Net Core. 
+
+## IdentityServer4
+The primary role of an Identity Provider (Idp) is to verify that a user is who they claim to be. Knowing that doesn't always provide all the clues as to how a robust provider like IdentityServer4 operates. IdentityServer4 also:
+-- Provides screens where user can enter their username and password
+-- Authorizing various actions (e.g. posting to some site)
+-- Interfaces with user database
+-- Keeps the user logged into the Idp itself using Cookie Middleware or similar
+
+## Further Reading
 
 
 ## Acknowledgments
