@@ -1,18 +1,26 @@
-# is4-authorization-code-flow
+# IdentityServer4.Authorization.Code
 IdentityServer 4 Example of an Authorization Code Flow (Grant). This project grew out of the need for an example IdentityServer 4 client using the Authorization Code Flow. 
 
 ## Getting Started
+
+### Prerequisites
+
+This example requires:
+- Visual Studio 2015 Preview 1 or later
+- .Net Core CLI.  The installer can be found here: https://www.microsoft.com/net/core#windows
+
 The solution consists of two projects:
-- An Identity Provier (IdP) command line applicaton built on IdentityServer 4 and Dotnet Core.
+- An Identity Provier (IdP) command line applicaton built on IdentityServer 4 and .Net Core.
 - An MVC Client built using Owin
 
-Both projects must start for the sample to work. In the Solution Explorer, right-click on the Solution at the top, select Set Startup Projects from the context menu. Pick Multiple Projects and set the action of both to Start. Pressing F5 now will start the identity provider and client.
+**Both projects must start for the sample to work.** In the Solution Explorer, right-click on the Solution at the top, select Set Startup Projects from the context menu. Pick Multiple Projects and set the action of both to Start. Pressing F5 now will start the identity provider and client.
 
 Once the MVC project is running, select Sign-in from the menu bar. Here are some working credentials:
 - user: user
 - password: pass123
 
 If the authentication with the IdP goes well, the client home/index page will enumerate the claims passed in on the Access Token.
+
 
 
 ## Acknowledgments
