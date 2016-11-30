@@ -33,8 +33,8 @@ Verifing that a user is who they claim to be is the primary role of an Identity 
 In IdentityServer3, the views, JavaScript, CSS, etc. to render those login / authorization screens were embedded resources in an assembly. In IdentityServer4, those files must be added. This makes customization tremendously easy, but does require that initial download. Those files are already included in this project, but for your own projects, visit https://github.com/IdentityServer/IdentityServer4.Quickstart.UI.
 
 ##Futher Reading
-Cookie Middleware - https://docs.microsoft.com/en-us/aspnet/core/security/authentication/cookie
-IdentityServer4 Getting Started - https://www.scottbrady91.com/Identity-Server/Getting-Started-with-IdentityServer-4
+- Cookie Middleware - https://docs.microsoft.com/en-us/aspnet/core/security/authentication/cookie
+- IdentityServer4 Getting Started - https://www.scottbrady91.com/Identity-Server/Getting-Started-with-IdentityServer-4
 
 ## Acknowledgments
 This code was inspired by Scott Brady's blog postings on the Implcit Flow and IdentityServer 3:  https://www.scottbrady91.com/Identity-Server/Identity-Server-3-Standalone-Implementation-Part-1
