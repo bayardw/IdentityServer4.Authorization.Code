@@ -27,8 +27,8 @@ The choice of Owin (.Net Framework, pre-Core) for the client was purely for expe
 ## IdentityServer4
 The primary role of an Identity Provider (Idp) is to verify that a user is who they claim to be. Knowing that doesn't always provide all the clues as to how a robust provider like IdentityServer4 operates. IdentityServer4 also:
 - Provides screens for user to enter their username and password
-- Reads with user database / datastore
-- Keeps the user logged into the Idp itself using Cookie Middleware or similar
+- Reads the user database / datastore
+- Keeps the user logged into the Idp itself using Cookie Middleware (configurable)
 
 In IdentityServer3, the views, JavaScript, CSS, etc. to render those login / authorization screens were embedded resources in an assembly. In IdentityServer4, those files must be added. This makes customization tremendously easy, but does require that initial download. Those files are already included in this project, but for your own projects, visit https://github.com/IdentityServer/IdentityServer4.Quickstart.UI.
 
