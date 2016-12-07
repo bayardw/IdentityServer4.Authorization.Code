@@ -36,6 +36,9 @@ In IdentityServer3, the views, JavaScript, CSS, etc. to render those login / aut
 - Cookie Middleware - https://docs.microsoft.com/en-us/aspnet/core/security/authentication/cookie
 - IdentityServer4 Getting Started - https://www.scottbrady91.com/Identity-Server/Getting-Started-with-IdentityServer-4
 
+##License
+This project is licensed under the MIT License - see the license.md file for details
+
 ## Acknowledgments
 This code was inspired by Scott Brady's blog postings on the Implcit Flow and IdentityServer 3:  https://www.scottbrady91.com/Identity-Server/Identity-Server-3-Standalone-Implementation-Part-1
 
